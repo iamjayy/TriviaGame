@@ -15,7 +15,7 @@
 body{
     color: #efc834;
     font-family: 'Kaushan Script', cursive;
-    background-image: url(assests/images/vegas.jpg);
+    background-image: url("assests/images/vegas.jpg");
 }
 
 .btn {
