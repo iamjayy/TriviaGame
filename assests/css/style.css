@@ -1,0 +1,30 @@
+#container {
+    font-family: 'Bitter', serif;
+    height: fit-content;
+    border-radius: 25px;
+    width: 80%;
+    background-color: grey;
+    line-height: 5px;
+    text-align: center;
+    margin: 90px;
+    padding: 20px;
+    color: black;
+    word-spacing: 3px;
+}
+
+body{
+    color: #efc834;
+    font-family: 'Kaushan Script', cursive;
+    background-image: url(assests/images/vegas.jpg);
+}
+
+.btn {
+    background-color: #efc834;
+    color: red;
+
+}
+
+#radio{
+    color: red;
+}
+
