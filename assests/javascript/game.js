@@ -78,87 +78,18 @@ var play = {
     $("#subWrapper").append("<br><br><button class='btn btn-warning' id='submit'>SUBMIT</button>");
     }, 
     done: function() {
-    $.each($("input[name='question-0']:checked"), function(){ //QUESTION 1
-    if($(this).val() == questions[0].correctAnswer) {
-    play.correct++;
-    } else {
-    play.incorrect++;
+    
+      for(var i = 0; i < questions.length; i++){
+        $.each($(`input[name='question-${i}']:checked`), function () { //QUESTION 1
+            if ($(this).val() == questions[i].correctAnswer) {
+                play.correct++;
+            } else {
+                play.incorrect++;
+            }
+        });
     }
-    });
-  
-    $.each($("input[name='question-1']:checked"), function(){ //QUESTION 2
-    if($(this).val() == questions[1].correctAnswer) {
-    play.correct++;
-    } else {
-    play.incorrect++;
-    }
-    });
-
-    $.each($("input[name='question-2']:checked"), function(){ //QUESTION 3
-    if($(this).val() == questions[2].correctAnswer) {
-    play.correct++;
-    } else {
-    play.incorrect++; 
-    }
-     });
-        
-  $.each($("input[name='question-3']:checked"), function(){ //QUESTION 4
-  if($(this).val() == questions[3].correctAnswer) {
-  play.correct++;
-  } else {
- play.incorrect++;
- }
-  });
-
-  $.each($("input[name='question-4']:checked"), function(){ //QUESTION 5
-  if($(this).val() == questions[4].correctAnswer) {
-  play.correct++;
-  } else {
-  play.incorrect++; 
-   }
-  });
-
-  $.each($("input[name='question-5']:checked"), function(){ //QUESTION 6
-  if($(this).val() == questions[5].correctAnswer) {
-  play.correct++;
-  } else {
-  play.incorrect++;
-  }
-  });
-
-  $.each($("input[name='question-6']:checked"), function(){ //QUESTION 7
-  if($(this).val() == questions[6].correctAnswer) {
-  play.correct++;
-   } else {
-  play.incorrect++;
-  }
-  });
-
-  $.each($("input[name='question-7']:checked"), function(){ //QUESTION 8
-  if($(this).val() == questions[7].correctAnswer) {
-  play.correct++;
-  } else {
-   play.incorrect++; 
-  }
-  });
-
-   $.each($("input[name='question-8']:checked"), function(){ //QUESTION 9
-   if($(this).val() == questions[8].correctAnswer) {
-  play.correct++;
-   } else {
-  play.incorrect++;
-  }
-  });
-
-   $.each($("input[name='question-9']:checked"), function(){ //QUESTION 10
-  if($(this).val() == questions[9].correctAnswer) {
-  play.correct++;
-  } else {
-  play.incorrect++; 
-  }       
-  });
-  this.result();
-  },
+    this.result();
+    },
 
 // result for answers show correct and incorrect
 result: function(){
