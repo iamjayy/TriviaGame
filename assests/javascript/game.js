@@ -1,6 +1,8 @@
+//function to start jumbotron trivia
 $('#startButton').on("click", function (){
     play.start();
 })
+
 
 $(document).on("click", "#submit", function () {
     play.done();
@@ -53,7 +55,7 @@ var questions = [{
 var play = {
    correct: 0,
    incorrect: 0,
-   counter: 60,
+   counter: 45,
    countdown: function() {
    play.counter--;
     $("#counter").html(play.counter);
@@ -67,7 +69,7 @@ var play = {
         
   start: function() {
     timer = setInterval(play.countdown, 1000);
-    $("#subWrapper").prepend("<h2>Time Remaining: <span id='counter'>60</span> Seconds</h2>"); 
+    $("#subWrapper").prepend("<h2>Time Remaining: <span id='counter'>45</span> Seconds</h2>"); 
     $("#startButton").remove();
     for (var i=0; i < questions.length; i++) {
     $("#subWrapper").append("<h2>"+questions[i].question+"</h2>");
@@ -78,7 +80,8 @@ var play = {
     $("#subWrapper").append("<br><br><button class='btn btn-warning' id='submit'>SUBMIT</button>");
     }, 
     done: function() {
-    
+
+    //for lop for questions checked
       for(var i = 0; i < questions.length; i++){
         $.each($(`input[name='question-${i}']:checked`), function () { //QUESTION 1
             if ($(this).val() == questions[i].correctAnswer) {
