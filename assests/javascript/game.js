@@ -12,43 +12,43 @@ $(document).on("click", "#submit", function () {
 var questions = [{
     question: "What is Zedd's real name?", //1 
     answers: ["Michael Thivaios ", "Robbert van de corput ", "Anton Zaslavski ", "Tim Bergling "],
-    correctAnswer: " Anton Zaslavski "
+    correctAnswer: "Anton Zaslavski "
     }, {
     question: "Who produces the Tomorrowland aftermovie Every Year?", //2 
     answers: ["Final Kid ", "Dimitri Vegas and Like Mike ", "Skrillex ", "ID&T "],
-    correctAnswer: " Dimitri Vegas and Like Mike "
+    correctAnswer: "Dimitri Vegas and Like Mike "
     }, {
     question: "Who is the highest paid DJ of 2014?", //3 
     answers: ["Calvin Harris ", "Hardwell ", "David Guetta ", "Kaskade "], 
-    correctAnswer: " Calvin Harris "
+    correctAnswer: "Calvin Harris "
     }, {
     question: "Who Founded Mad Decent Records", //4
     answers: ["Skrillex ", "Diplo ", "Dillon Francis ", "Steve Aoki "],
-    correctAnswer: " Diplo "
+    correctAnswer: "Diplo "
     }, {
     question: "What Religion is Kaskade affliated with?", //5 
     answers: ["Mormonism ", "Christianity ", "Buddhism ", "Catholic "],
-    correctAnswer: " Mormonism "
+    correctAnswer: "Mormonism "
     }, {
     question: "In which city did the EDM festival Electric Daisy Carnival first appear?", //6
     answers: ["San Diego ", "San Fransico ", "Las Vegas ", "Los Angeles "],
-    correctAnswer: " Los Angeles "
+    correctAnswer: "Los Angeles "
     }, {
     question: "What is the maximum tempo of most trance music?", //7
     answers: ["128bpm ", "140bpm ", "120bpm ", "200bpm "],
-    correctAnswer: " 140bpm "
+    correctAnswer: "140bpm "
     }, {
     question: "In 2015 about how many people attended the Electric Daisy Carnival?", //8
     answers: ["400,000 ", "500,000 ", "1 Million ", "250,000 "],
-    correctAnswer: " 400,000 "
+    correctAnswer: "400,000 "
     }, {
     question: "Who almost became one of the swedish house mafia?", //9
     answers: ["Eric Prydz ", "Alesso ", "Avicii ", "Hardwell "],
-    correctAnswer: " Eric Prydz "
+    correctAnswer: "Eric Prydz "
     }, { 
     question: "Who is the highest paid Dj of 2018?", //10
     answers: ["Kaskade ", "Marshmello ", "Martin Garrix ", "Illenium "],
-    correctAnswer: " Marshmello "
+    correctAnswer: "Marshmello "
     }
     ];
 
